@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="mobile-menu" id="mobile-menu">
+            <a id="menu-toggle"><img src="./images/list.svg" alt=""></a>
+            
+        </div>
+        <h1>Bom dia Nilo</h1>
+        <div id="data-atual"> <!-- Aqui será impressa a data --> </div>
+        <div id="logo">
+            <figure><img src="./images/logo-sesi.png" alt="Logo SESI"></figure>
+        </div>
+    </header>
+    <aside>
+        <nav>
+            <ul>
+                <li><img src="./images/houses.svg" alt=""><a href="index.html"> Ínicio </a></li>
+                <li><img src="./images/gear.svg" alt=""><a href="setings.html"> Configurações </a></li>
+                <li><img src="./images/person-circle.svg" alt=""><a href="acount.html"> Perfil </a></li>
+            </ul>
+        </nav>
+    </aside>
+    <main class="start">
+        <section>
+            <div>
+                <p>Contagem -</p>
+            </div>
+            <div>
+                <div class="cat">
+                    <h2>Fundamental 1 A</h2>
+                    <button class="btano btpurple" data-ano="1º ANO">1º ANO</button>
+                    <button class="btano btpurple" data-ano="2º ANO">2º ANO</button>
+                </div>
+                <div class="cat">
+                    <h2>Fundamental 1 B</h2>
+                    <button class="btano btpurple" data-ano="3º ANO">3º ANO</button>
+                    <button class="btano btpurple" data-ano="4º ANO">4º ANO</button>
+                    <button class="btano btpurple" data-ano="5º ANO">5º ANO</button>
+                </div>
+                <div class="cat">
+                    <h2>Fundamental 2</h2>
+                    <button class="btano btpurple" data-ano="6º ANO">6º ANO</button>
+                    <button class="btano btpurple" data-ano="7º ANO">7º ANO</button>
+                    <button class="btano btpurple" data-ano="8º ANO">8º ANO</button>
+                    <button class="btano btpurple" data-ano="9º ANO">9º ANO</button>
+                </div>
+                <div class="cat">
+                    <h2>Ensino Médio</h2>
+                    <button class="btano btpurple" data-ano="1º ANO M">1º ANO M</button>
+                    <button class="btano btpurple" data-ano="2º ANO M">2º ANO M</button>
+                    <button class="btano btpurple" data-ano="3º ANO M">3º ANO M</button>
+                   
+                </div>
+                <div class="cat">
+                    <h2>Outros</h2>
+                    <button class="btano btpurple" data-ano="Robótica">Robótica</button>
+                    <button class="btano btpurple" data-ano="Personaliza">Personaliza</button>
+                    <button class="btano btpurple" data-ano="T.A.">T.A.</button>
+                    <button class="btano btred" data-ano="TRI">TRI</button>
+                </div>
+            </div>
+            <section id="resultados">
+                <!-- A contagem será exibida aqui -->
+            </section>
+        </section>
+    </main>
+    
+    <!-- Modal -->
+    <div id="modal" class="modal" style="display:none;">
+        <div class="modal-content">
+            <h3>Contagem do&nbsp; <span id="modal-titulo"></span></h3>
+            <label for="quantidade">Quantidade de Alunos:</label>
+            <input type="number" id="quantidade" min="1" class="bt" autofocus />
+            <button id="confirmar" class="bt btgreenn">Confirmar</button>
+            <button id="fechar" class="bt btredd">Fechar</button>
+        </div>
+    </div>
+
+    <footer>niloweb 2024 &copy;</footer>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
